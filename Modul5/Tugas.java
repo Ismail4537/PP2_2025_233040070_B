@@ -1,4 +1,4 @@
-package Modul05;
+package Modul5;
 
 import java.awt.BorderLayout;
 import javax.swing.JButton;

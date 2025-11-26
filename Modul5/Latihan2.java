@@ -1,12 +1,10 @@
-package Modul05;
+package Modul5;
 
-import java.awt.FlowLayout;
-import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.SwingUtilities;
 
-public class Latihan3 {
+public class Latihan2 {
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
@@ -14,17 +12,8 @@ public class Latihan3 {
                 frame.setSize(400, 300);
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-                frame.setLayout(new FlowLayout());
-
-                JLabel label = new JLabel("Ambasing");
-                JButton button = new JButton("Klik saya");
-
-                button.addActionListener(e -> {
-                    label.setText("Ambatukam");
-                });
-
+                JLabel label = new JLabel("Rehan Wangsaf.");
                 frame.add(label);
-                frame.add(button);
 
                 frame.setVisible(true);
             }

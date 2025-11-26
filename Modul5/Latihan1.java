@@ -1,4 +1,4 @@
-package Modul05;
+package Modul5;
 
 import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
