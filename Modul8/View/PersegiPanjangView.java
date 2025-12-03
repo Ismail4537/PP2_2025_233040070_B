@@ -11,7 +11,7 @@ public class PersegiPanjangView extends JFrame {
     JLabel hasilLabel = new JLabel("0");
     JButton luasButton = new JButton("Hitung Luas");
     JButton kelilingButton = new JButton("Hitung Keliling");
-    JButton resetButton = new JButton("Reset Hasil");
+    JButton resetButton = new JButton("Reset Inputan");
     JPanel mainPanel = new JPanel();
 
     public PersegiPanjangView() {
