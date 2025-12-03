@@ -63,7 +63,7 @@ public class PersegiPanjangController {
     class ResetListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
-            view.setHasil(0);
+            view.resetInputan();
         }
     }
 }

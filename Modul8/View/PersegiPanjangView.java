@@ -41,6 +41,12 @@ public class PersegiPanjangView extends JFrame {
         return Double.parseDouble(lebarField.getText());
     }
 
+    public void resetInputan() {
+        panjangField.setText("");
+        lebarField.setText("");
+        hasilLabel.setText("0");
+    }
+
     public void setHasil(double hasil) {
         hasilLabel.setText(String.valueOf(hasil));
     }
