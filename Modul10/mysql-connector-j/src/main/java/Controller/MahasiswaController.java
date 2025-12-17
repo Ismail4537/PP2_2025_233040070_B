@@ -2,10 +2,8 @@ package Controller;
 
 import Model.MahasiswaModel;
 import View.MahasiswaView;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.awt.event.*;
+import java.sql.*;
 
 public class MahasiswaController {
     MahasiswaModel model;
@@ -109,10 +107,10 @@ public class MahasiswaController {
         }
     }
 
-    class TableMouseListener implements java.awt.event.MouseListener {
+    class TableMouseListener implements MouseListener {
 
         @Override
-        public void mouseClicked(java.awt.event.MouseEvent e) {
+        public void mouseClicked(MouseEvent e) {
             int row = view.getTableMahasiswa().getSelectedRow();
             view.setFormFields(
                     view.getTableModel().getValueAt(row, 1).toString(),
@@ -121,19 +119,19 @@ public class MahasiswaController {
         }
 
         @Override
-        public void mousePressed(java.awt.event.MouseEvent e) {
+        public void mousePressed(MouseEvent e) {
         }
 
         @Override
-        public void mouseReleased(java.awt.event.MouseEvent e) {
+        public void mouseReleased(MouseEvent e) {
         }
 
         @Override
-        public void mouseEntered(java.awt.event.MouseEvent e) {
+        public void mouseEntered(MouseEvent e) {
         }
 
         @Override
-        public void mouseExited(java.awt.event.MouseEvent e) {
+        public void mouseExited(MouseEvent e) {
         }
     }
 
