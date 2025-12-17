@@ -38,7 +38,7 @@ public class MahasiswaController {
                     return;
                 }
                 model.tambahData(view.getNama(), view.getNIM(), view.getJurusan());
-                view.resetFields();
+                view.resetFormFields();
                 loadData();
                 view.showMessage("Data berhasil ditambahkan.", "Success");
             } catch (SQLException ex) {
@@ -57,7 +57,7 @@ public class MahasiswaController {
             }
             try {
                 model.updateData(view.getNama(), view.getNIM(), view.getJurusan());
-                view.resetFields();
+                view.resetFormFields();
                 loadData();
                 view.showMessage("Data berhasil diupdate.", "Success");
             } catch (SQLException ex) {
@@ -76,7 +76,7 @@ public class MahasiswaController {
             }
             try {
                 model.deleteData(view.getNIM());
-                view.resetFields();
+                view.resetFormFields();
                 loadData();
                 view.showMessage("Data berhasil dihapus.", "Success");
             } catch (SQLException ex) {
@@ -105,7 +105,7 @@ public class MahasiswaController {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            view.resetFields();
+            view.resetFormFields();
         }
     }
 

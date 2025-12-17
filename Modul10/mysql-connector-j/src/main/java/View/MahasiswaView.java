@@ -148,13 +148,12 @@ public class MahasiswaView extends JFrame {
     }
 
     // Method to reset input fields
-    public void resetFields() {
+    public void resetFormFields() {
         txtNama.setText("");
         txtNIM.setText("");
         txtJurusan.setText("");
     }
 
-    // Method to show error messages
     public void showError(String message, String title) {
         JOptionPane.showMessageDialog(this, message, title, JOptionPane.ERROR_MESSAGE);
     }
